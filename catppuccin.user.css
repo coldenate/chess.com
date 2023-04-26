@@ -1,0 +1,139 @@
+/* ==UserStyle==
+@name         Chess.com Catppuccin
+@namespace    github.com/skelebro1/chess.com
+@homepageURL  https://github.com/skelebro1/chess.com
+@version      1.0.0
+@description  Catppuccin-based theme for Chess.com
+@author       Skele
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document domain("chess.com")
+
+{
+
+body {
+    background: #1e1e2e;
+    
+    .nav-panel-shade{
+        background: #181825;
+    }
+    
+    .nav-popover.dark {
+        background: #181825;
+    }
+    
+    .selector-button-button {
+        background: #313244;
+    }
+    
+    .selector-button-button:hover {
+        background: #45475a;
+    }
+    
+    .time-selector-button-button {
+        background: #313244;
+    }
+    
+    .time-selector-button-button:hover {
+        background: #45475a;
+    }
+    
+    .clock-component.clock-black {
+        background: #313244;
+    }
+    
+    .clock-component.clock-white {
+        background: #cdd6f4;
+    }
+    
+    .highlight {
+        background: #fab387 !important;
+    }
+    
+    .hint{
+        background-color: #494d64;
+        filter: drop-shadow((0px 0px 1px) #181926);
+    }
+    
+    .capture-hint{
+        background-color: #494d64;
+        filter: drop-shadow((0px 0px 1px) #181926);
+        z-index: -1;
+    }
+    
+    .modal-game-over-header-grey {
+        background-color: #1e1e2e;
+    }
+    
+    .modal-content-component.modal-content-light {
+        background-color: #1e1e2e;
+    }
+    
+    .modal-game-over-user-winner-active {
+        border: .5rem solid #7287fd;
+    }
+    
+    .modal-game-over-user-crown {
+        background: #7287fd;
+    }
+    
+    /* Board */
+    
+    .board {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/board.png") !important;
+    }
+
+    /* Black Pieces */
+
+    .piece.bp {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bp.png")!important;
+    }
+
+    .piece.bn {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bn.png")!important;
+    }
+
+    .piece.bb {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bb.png")!important;
+    }
+
+    .piece.br {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/br.png")!important;
+    }
+
+    .piece.bk {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bk.png")!important;
+    }
+
+    .piece.bq {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bq.png")!important;
+    }
+
+    /* White Pieces */
+
+    .piece.wp {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wp.png")!important;
+    }
+
+    .piece.wn {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wn.png")!important;
+    }
+
+    .piece.wb {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wb.png")!important;
+    }
+
+    .piece.wr {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wr.png")!important;
+    }
+
+    .piece.wk {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wk.png")!important;
+    }
+
+    .piece.wq {
+        background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wq.png")!important;
+    }
+
+}
+}
