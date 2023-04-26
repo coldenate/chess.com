@@ -22,6 +22,10 @@ body {
         background: #181825;
     }
     
+    #sb .nav-action.has-popover + .nav-popover {
+        background: #181825;
+    }
+    
     .selector-button-button {
         background: #313244;
     }
