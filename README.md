@@ -36,10 +36,9 @@
 
 ## Usage
 
-1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
+#### Stylus
+1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
+2. [Click here to install.](https://raw.githubusercontent.com/coldenate/chess.com/main/catppuccin.user.css)
 
 <!-- this section is optional 
 ## 🙋 FAQ
