@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name         Chess.com Catppuccin
-@namespace    github.com/skelebro1/chess.com
-@homepageURL  https://github.com/skelebro1/chess.com
+@namespace    github.com/coldenate/chess.com
+@homepageURL  https://github.com/coldenate/chess.com
 @version      1.0.0
 @description  Catppuccin-based theme for Chess.com
-@author       Skele
+@author       Skele and Nathan Solis
 @preprocessor stylus
 ==/UserStyle== */
 @-moz-document domain("chess.com")
