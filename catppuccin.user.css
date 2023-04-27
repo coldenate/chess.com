@@ -16,10 +16,10 @@
     :root {
         #catppuccin(@lightFlavour, @accentColour);
     }
-    :root:has(.dark-mode) {
+    .dark-mode {
         #catppuccin(@darkFlavour, @accentColour);
     }
-    
+
     @catppuccin: {
         @latte: {
             @rosewater: #dc8a78;
@@ -163,150 +163,154 @@
         @mantle: @catppuccin[@@lookup][@mantle];
         @crust: @catppuccin[@@lookup][@crust];
         @accent-colour: @catppuccin[@@lookup][@@accent];
+
+        & when (@lookup = "latte") {
+            body {
+                background: @base;
+            }
+        }
         
-        body {
+        & {
             background: @base;
-			color: @base;
-            
-            /* index page */
-            .index-title {
-                color: @text !important;
-            }
-                        
-            .index-info-item-counter {
-                color: @text !important;
-            }
-            
-            .index-info-item {
-                color: @subtext0 !important;
-            }
-            
-            /* button */
-            .ui_v5-button-component.ui_v5-button-primary {
-                color: @crust !important;
-                background-color: @accent-colour !important;
-                --borderColor: darken(@accent-colour, 20%) !important;
-            }
+        }
+        /* index page */
+        .index-title {
+            color: @text !important;
+        }
 
-            .nav-panel-shade {
-                background: @mantle;
-            }
+        .index-info-item-counter {
+            color: @text !important;
+        }
 
-            .nav-popover.dark {
-                background: @mantle;
-            }
+        .index-info-item {
+            color: @subtext0 !important;
+        }
 
-            #sb .nav-action.has-popover + .nav-popover {
-                background: @mantle;
-            }
+        /* button */
+        .ui_v5-button-component.ui_v5-button-primary {
+            color: @crust !important;
+            background-color: @accent-colour !important;
+            --borderColor: darken(@accent-colour, 20%) !important;
+        }
 
-            .selector-button-button {
-                background: @surface0;
-                &:hover {
-                    background: @surface1;
-                }
-            }
+        .nav-panel-shade {
+            background: @mantle;
+        }
 
-            .time-selector-button-button {
-                background: @surface0;
-                &:hover {
-                    background: @surface1;
-                }
-            }
+        .nav-popover.dark {
+            background: @mantle;
+        }
 
-            .clock-component.clock-black {
-                background: @surface0;
-            }
+        #sb .nav-action.has-popover + .nav-popover {
+            background: @mantle;
+        }
 
-            .clock-component.clock-white {
-                background: @text;
+        .selector-button-button {
+            background: @surface0;
+            &:hover {
+                background: @surface1;
             }
+        }
 
-            .highlight {
-                background: @peach !important;
+        .time-selector-button-button {
+            background: @surface0;
+            &:hover {
+                background: @surface1;
             }
+        }
 
-            .hint {
-                background-color: @overlay1;
-                filter: drop-shadow(0px 0px 1px @crust);
-            }
+        .clock-component.clock-black {
+            background: @surface0;
+        }
 
-            .capture-hint {
-                background-color: @overlay1;
-                filter: drop-shadow(0px 0px 1px @crust);
-                z-index: -1;
-            }
+        .clock-component.clock-white {
+            background: @text;
+        }
 
-            .modal-game-over-header-grey {
-                background-color: @base;
-            }
+        .highlight {
+            background: @peach !important;
+        }
 
-            .modal-content-component.modal-content-light {
-                background-color: @base;
-            }
+        .hint {
+            background-color: @overlay1;
+            filter: drop-shadow(0px 0px 1px @crust);
+        }
 
-            .modal-game-over-user-winner-active {
-                border-color: @lavender;
-            }
+        .capture-hint {
+            background-color: @overlay1;
+            filter: drop-shadow(0px 0px 1px @crust);
+            z-index: -1;
+        }
 
-            .modal-game-over-user-crown {
-                background: @lavender;
-            }
+        .modal-game-over-header-grey {
+            background-color: @base;
+        }
 
-            /* Board */
-            .board {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/board.png") !important;
-            }
+        .modal-content-component.modal-content-light {
+            background-color: @base;
+        }
 
-            /* Black Pieces */
-            .piece.bp {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bp.png") !important;
-            }
+        .modal-game-over-user-winner-active {
+            border-color: @lavender;
+        }
 
-            .piece.bn {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bn.png") !important;
-            }
+        .modal-game-over-user-crown {
+            background: @lavender;
+        }
 
-            .piece.bb {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bb.png") !important;
-            }
+        /* Board */
+        .board {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/board.png") !important;
+        }
 
-            .piece.br {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/br.png") !important;
-            }
+        /* Black Pieces */
+        .piece.bp {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bp.png") !important;
+        }
 
-            .piece.bk {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bk.png") !important;
-            }
+        .piece.bn {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bn.png") !important;
+        }
 
-            .piece.bq {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bq.png") !important;
-            }
+        .piece.bb {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bb.png") !important;
+        }
 
-            /* White Pieces */
-            .piece.wp {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wp.png") !important;
-            }
+        .piece.br {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/br.png") !important;
+        }
 
-            .piece.wn {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wn.png") !important;
-            }
+        .piece.bk {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bk.png") !important;
+        }
 
-            .piece.wb {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wb.png") !important;
-            }
+        .piece.bq {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/b-pieces/bq.png") !important;
+        }
 
-            .piece.wr {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wr.png") !important;
-            }
+        /* White Pieces */
+        .piece.wp {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wp.png") !important;
+        }
 
-            .piece.wk {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wk.png") !important;
-            }
+        .piece.wn {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wn.png") !important;
+        }
 
-            .piece.wq {
-                background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wq.png") !important;
-            }
+        .piece.wb {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wb.png") !important;
+        }
+
+        .piece.wr {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wr.png") !important;
+        }
+
+        .piece.wk {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wk.png") !important;
+        }
+
+        .piece.wq {
+            background-image: url("https://raw.githubusercontent.com/skelebro1/chess.com/main/assets/w-pieces/wq.png") !important;
         }
     }
 }
