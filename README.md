@@ -51,8 +51,8 @@
 ## 💝 Thanks to
 
 - [Skele](https://github.com/skelebro1)
-- [coldenate](https://github.com/coldenate)
-
+- [Nathan Solis](https://github.com/coldenate)
+- [Isabel](https://github.com/isabelroses)
 &nbsp;
 
 <p align="center">
