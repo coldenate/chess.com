@@ -4,7 +4,7 @@
 @homepageURL  https://github.com/coldenate/chess.com
 @version      0.1.0
 @description  Soothing pastel theme for Chess.com
-@author       Catppuccin
+@author       coldenate, isabelroses and skelebro1
 @preprocessor less
 @var select lightFlavour "Light Flavour"["latte:Latte*", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha"]
 @var select darkFlavour "Dark Flavour"["latte:Latte", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha*"]
