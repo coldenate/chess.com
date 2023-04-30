@@ -200,6 +200,10 @@
         .nav-popover.dark {
             background: @mantle;
         }
+      
+        .nav-section-header-component {
+            background: @base;
+        }
 
         #sb .nav-action.has-popover + .nav-popover {
             background: @mantle;
