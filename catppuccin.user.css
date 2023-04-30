@@ -192,7 +192,15 @@
             background-color: @accent-colour !important;
             --borderColor: darken(@accent-colour, 20%) !important;
         }
-
+        
+        .ui_v5-input-component {
+            background: @base;
+        }
+        
+        .ui_v5-switch-checkbox:not(.ui_v5-switch-readonly):checked + .ui_v5-switch-label {
+            background: @green;
+        }
+        
         .nav-panel-shade {
             background: @mantle;
         }
@@ -206,6 +214,30 @@
         }
 
         #sb .nav-action.has-popover + .nav-popover {
+            background: @mantle;
+        }
+        
+        .popover-friends-header {
+            background: @mantle;
+        }
+        
+        .popover-friends-content {
+            background: @mantle;
+        }
+        
+        .popover-messages-header {
+            background: @mantle;
+        }
+        
+        .popover-messages-content {
+            background: @mantle;
+        }
+        
+        .popover-settings-header {
+            background: @mantle;
+        }
+        
+        .popover-settings-content {
             background: @mantle;
         }
 
