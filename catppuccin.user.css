@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Chess.com Catppuccin
-@namespace    github.com/coldenate/chess.com
-@homepageURL  https://github.com/coldenate/chess.com
+@namespace    raw.githubusercontent.com/coldenate/chess.com
+@homepageURL  https://raw.githubusercontent.com/coldenate/chess.com
 @version      0.1.0
 @description  Soothing pastel theme for Chess.com
 @author       coldenate, isabelroses and skelebro1
@@ -48,6 +48,18 @@
       @base: #eff1f5;
       @mantle: #e6e9ef;
       @crust: #dce0e8;
+      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bb.png");
+      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bk.png");
+      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bn.png");
+      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bp.png");
+      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bq.png");
+      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/br.png");
+      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wb.png");
+      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wk.png");
+      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wn.png");
+      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wp.png");
+      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wq.png");
+      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wr.png");
     }
     @frappe: {
       @rosewater: #f2d5cf;
@@ -76,6 +88,18 @@
       @base: #303446;
       @mantle: #292c3c;
       @crust: #232634;
+      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bb.png");
+      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bk.png");
+      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bn.png");
+      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bp.png");
+      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bq.png");
+      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/br.png");
+      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wb.png");
+      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wk.png");
+      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wn.png");
+      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wp.png");
+      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wq.png");
+      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wr.png");
     }
     @macchiato: {
       @rosewater: #f4dbd6;
@@ -104,6 +128,18 @@
       @base: #24273a;
       @mantle: #1e2030;
       @crust: #181926;
+      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bb.png");
+      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bk.png");
+      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bn.png");
+      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bp.png");
+      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bq.png");
+      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/br.png");
+      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wb.png");
+      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wk.png");
+      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wn.png");
+      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wp.png");
+      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wq.png");
+      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wr.png");
     }
     @mocha: {
       @rosewater: #f5e0dc;
@@ -132,74 +168,22 @@
       @base: #1e1e2e;
       @mantle: #181825;
       @crust: #11111b;
+      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bb.png");
+      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bk.png");
+      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bn.png");
+      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bp.png");
+      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bq.png");
+      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/br.png");
+      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wb.png");
+      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wk.png");
+      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wn.png");
+      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wp.png");
+      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wq.png");
+      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wr.png");
     }
   }
 
-  @chess {
-    @latte: {
-      @bb: url("https://github.com/coldnate/chess.com/assets/latte/b/bb.png");
-      @bk: url("https://github.com/coldnate/chess.com/assets/latte/b/bk.png");
-      @bn: url("https://github.com/coldnate/chess.com/assets/latte/b/bn.png");
-      @bp: url("https://github.com/coldnate/chess.com/assets/latte/b/bp.png");
-      @bq: url("https://github.com/coldnate/chess.com/assets/latte/b/bq.png");
-      @br: url("https://github.com/coldnate/chess.com/assets/latte/b/br.png");
-
-      @wb: url("https://github.com/coldnate/chess.com/assets/latte/w/wb.png");
-      @wk: url("https://github.com/coldnate/chess.com/assets/latte/w/wk.png");
-      @wn: url("https://github.com/coldnate/chess.com/assets/latte/w/wn.png");
-      @wp: url("https://github.com/coldnate/chess.com/assets/latte/w/wp.png");
-      @wq: url("https://github.com/coldnate/chess.com/assets/latte/w/wq.png");
-      @wr: url("https://github.com/coldnate/chess.com/assets/latte/w/wr.png");
-    }
-    @frappe: {
-      @bb: url("https://github.com/coldnate/chess.com/assets/frappe/b/bb.png");
-      @bk: url("https://github.com/coldnate/chess.com/assets/frappe/b/bk.png");
-      @bn: url("https://github.com/coldnate/chess.com/assets/frappe/b/bn.png");
-      @bp: url("https://github.com/coldnate/chess.com/assets/frappe/b/bp.png");
-      @bq: url("https://github.com/coldnate/chess.com/assets/frappe/b/bq.png");
-      @br: url("https://github.com/coldnate/chess.com/assets/frappe/b/br.png");
-
-      @wb: url("https://github.com/coldnate/chess.com/assets/frappe/w/wb.png");
-      @wk: url("https://github.com/coldnate/chess.com/assets/frappe/w/wk.png");
-      @wn: url("https://github.com/coldnate/chess.com/assets/frappe/w/wn.png");
-      @wp: url("https://github.com/coldnate/chess.com/assets/frappe/w/wp.png");
-      @wq: url("https://github.com/coldnate/chess.com/assets/frappe/w/wq.png");
-      @wr: url("https://github.com/coldnate/chess.com/assets/frappe/w/wr.png");
-    }
-    @macchiato: {
-      @bb: url("https://github.com/coldnate/chess.com/assets/macchiato/b/bb.png");
-      @bk: url("https://github.com/coldnate/chess.com/assets/macchiato/b/bk.png");
-      @bn: url("https://github.com/coldnate/chess.com/assets/macchiato/b/bn.png");
-      @bp: url("https://github.com/coldnate/chess.com/assets/macchiato/b/bp.png");
-      @bq: url("https://github.com/coldnate/chess.com/assets/macchiato/b/bq.png");
-      @br: url("https://github.com/coldnate/chess.com/assets/macchiato/b/br.png");
-
-      @wb: url("https://github.com/coldnate/chess.com/assets/macchiato/w/wb.png");
-      @wk: url("https://github.com/coldnate/chess.com/assets/macchiato/w/wk.png");
-      @wn: url("https://github.com/coldnate/chess.com/assets/macchiato/w/wn.png");
-      @wp: url("https://github.com/coldnate/chess.com/assets/macchiato/w/wp.png");
-      @wq: url("https://github.com/coldnate/chess.com/assets/macchiato/w/wq.png");
-      @wr: url("https://github.com/coldnate/chess.com/assets/macchiato/w/wr.png");
-    }
-    @mocha: {
-      @bb: url("https://github.com/coldnate/chess.com/assets/mocha/b/bb.png");
-      @bk: url("https://github.com/coldnate/chess.com/assets/mocha/b/bk.png");
-      @bn: url("https://github.com/coldnate/chess.com/assets/mocha/b/bn.png");
-      @bp: url("https://github.com/coldnate/chess.com/assets/mocha/b/bp.png");
-      @bq: url("https://github.com/coldnate/chess.com/assets/mocha/b/bq.png");
-      @br: url("https://github.com/coldnate/chess.com/assets/mocha/b/br.png");
-
-      @wb: url("https://github.com/coldnate/chess.com/assets/mocha/w/wb.png");
-      @wk: url("https://github.com/coldnate/chess.com/assets/mocha/w/wk.png");
-      @wn: url("https://github.com/coldnate/chess.com/assets/mocha/w/wn.png");
-      @wp: url("https://github.com/coldnate/chess.com/assets/mocha/w/wp.png");
-      @wq: url("https://github.com/coldnate/chess.com/assets/mocha/w/wq.png");
-      @wr: url("https://github.com/coldnate/chess.com/assets/mocha/w/wr.png");
-    }
-  }
-
-  #catppuccin(@lookup,
-  @accent) {
+  #catppuccin(@lookup, @accent) {
     @rosewater: @catppuccin[@@lookup][@rosewater];
     @flamingo: @catppuccin[@@lookup][@flamingo];
     @pink: @catppuccin[@@lookup][@pink];
@@ -228,18 +212,18 @@
     @crust: @catppuccin[@@lookup][@crust];
     @accent-colour: @catppuccin[@@lookup][@@accent];
 
-    @bb: @chess[@@lookup][@bb];
-    @bk: @chess[@@lookup][@bk];
-    @bn: @chess[@@lookup][@bn];
-    @bp: @chess[@@lookup][@bp];
-    @bq: @chess[@@lookup][@bq];
-    @br: @chess[@@lookup][@br];
-    @wb: @chess[@@lookup][@wb];
-    @wk: @chess[@@lookup][@wk];
-    @wn: @chess[@@lookup][@wn];
-    @wp: @chess[@@lookup][@wp];
-    @wq: @chess[@@lookup][@wq];
-    @wr: @chess[@@lookup][@wr];
+    @bb: @catppuccin[@@lookup][@bb];
+    @bk: @catppuccin[@@lookup][@bk];
+    @bn: @catppuccin[@@lookup][@bn];
+    @bp: @catppuccin[@@lookup][@bp];
+    @bq: @catppuccin[@@lookup][@bq];
+    @br: @catppuccin[@@lookup][@br];
+    @wb: @catppuccin[@@lookup][@wb];
+    @wk: @catppuccin[@@lookup][@wk];
+    @wn: @catppuccin[@@lookup][@wn];
+    @wp: @catppuccin[@@lookup][@wp];
+    @wq: @catppuccin[@@lookup][@wq];
+    @wr: @catppuccin[@@lookup][@wr];
 
     & when (@lookup ="latte") {
       body {
