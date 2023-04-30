@@ -193,6 +193,10 @@
             --borderColor: darken(@accent-colour, 20%) !important;
         }
         
+        .ui_v5-select-component:not(.ui_v5-select-light), .ui_v5-select-component.ui_v5-select-dark {
+            background: @base;
+        }
+        
         .ui_v5-input-component {
             background: @base;
         }
