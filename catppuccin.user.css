@@ -183,7 +183,8 @@
     }
   }
 
-  #catppuccin(@lookup, @accent) {
+  #catppuccin(@lookup,
+  @accent) {
     @rosewater: @catppuccin[@@lookup][@rosewater];
     @flamingo: @catppuccin[@@lookup][@flamingo];
     @pink: @catppuccin[@@lookup][@pink];
@@ -233,8 +234,41 @@
 
     & {
       background: @base;
+      --globalBackground: @mantle !important;
+      --globalBackgroundOpaque: @mantle !important;
+      --globalSecondaryBackground: @crust !important;
+      --globalTertiaryBackground: @surface0 !important;
+      --globalAccentBackground: @accent-colour !important;
+      --globalSecondaryAccentBackground: darken(@accent-colour, 20%) !important;
+      --globalSiteBackground: @base !important;
+      --subtleButtonBackground: hsla(0, 0%, 100%, .16);
+      --globalBorder: @surface0 !important;
+      --globalGray: hsla(0, 0%, 100%, .08);
+      --globalGraySoft: hsla(0, 0%, 100%, .08);
+      --globalColorThemeFull: #fff;
+      --globalColorThemeHigh: hsla(0, 0%, 100%, .85);
+      --globalColorThemeMid: @overlay2 !important;
+      --globalColorThemeLow: @overlay0 !important;
+      --globalColorThemeLower: @base !important;
+      --globalColorThemeLink: @sapphire !important;
+      --globalColorThemeBlueToWhite: #fff;
+      --globalColorThemeBlueToMid: hsla(0, 0%, 100%, .72);
+      --globalColorThemeBlueToMidHover: hsla(0, 0%, 100%, .85);
+      --globalColorThemeBlueToHigh: hsla(0, 0%, 100%, .85);
+      --globalColorThemeBlueToHighHover: #fff;
+      --globalColorThemeHighToMid: hsla(0, 0%, 100%, .72);
+      --globalColorThemeFullToMid: hsla(0, 0%, 100%, .72);
+      --globalColorNeutral50: rgba(0, 0, 0, .1);
+      --globalColorNeutral100: rgba(0, 0, 0, .2);
+      --globalColorNeutral200: rgba(0, 0, 0, .4);
+      --globalOverlayBackground: @base !important;
+      --globalColorWin: @green !important;
+      --globalColorDraw: @accent-colour !important;
+      --globalColorLoss: @red !important;
     }
+
     /* index page */
+    .promo-title,
     .index-title {
       color: @text !important;
     }
@@ -247,16 +281,44 @@
       color: @subtext0 !important;
     }
 
-    /* button */
-    .ui_v5-button-component.ui_v5-button-primary {
+    .index-quote-author .index-chess-title {
+      background: @accent-colour !important;
       color: @crust !important;
-      background-color: @accent-colour !important;
-      --borderColor: darken(@accent-colour, 20%) !important;
     }
 
-    .ui_v5-select-component:not(.ui_v5-select-light),
-    .ui_v5-select-component.ui_v5-select-dark {
-      background: @base;
+    .authentication-intro-levels {
+      --labelBackground: @surface0 !important;
+      --labelBackgroundHover: @surface1 !important;
+
+      .authentication-intro-level-v5.authentication-intro-selected {
+        border-color: @accent-colour !important;
+      }
+    }
+
+    /* ui */
+    .ui_v5-button-component {
+      &.ui_v5-button-basic {
+        --basicColor: @text !important;
+        --basicHoverColor: @text !important;
+        --basicBgColor: @surface1 !important;
+        --basicBghover: @surface2 !important;
+        --borderColor: @surface0 !important;
+      }
+      &.ui_v5-button-primary {
+        color: @crust !important;
+        background-color: @accent-colour !important;
+        --borderColor: darken(@accent-colour, 20%) !important;
+        &:hover {
+          --secondaryBorderColor: fadeout(@accent-colour, 20%) !important;
+        }
+      }
+    }
+
+    .ui_v5-select-component {
+      &:not(.ui_v5-select-light),
+      &.ui_v5-select-dark {
+        background: @base;
+      }
     }
 
     .ui_v5-input-component {
@@ -360,9 +422,10 @@
       background: @lavender;
     }
 
+
     /* Board */
     .board {
-      background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/base/board.png") !important;
+      background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/board.png") !important;
     }
 
     /* Black Pieces */
