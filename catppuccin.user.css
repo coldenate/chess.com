@@ -12,7 +12,7 @@
 @license MIT
 ==/UserStyle== */
 @-moz-document domain("chess.com") {
-  :root {
+  body {
     #catppuccin(@lightFlavour, @accentColour);
   }
   .dark-mode {
