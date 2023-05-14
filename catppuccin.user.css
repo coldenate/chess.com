@@ -443,11 +443,11 @@
 
     /* Board */
     .board {
-      background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/board.png") !important;
+      background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/base/board.png") !important;
     }
 
     .game-preview-legacy-component {
-      background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/board.png") !important;
+      background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/base/board.png") !important;
     }
 
     /* Black Pieces */
