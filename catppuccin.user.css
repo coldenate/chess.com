@@ -1,540 +1,577 @@
 /* ==UserStyle==
-@name         Chess.com Catppuccin
-@namespace    github.com/catppuccin/chess.com
-@homepageURL  https://github.com/catppuccin/chess.com
-@version      0.1.0
-@description  Soothing pastel theme for Chess.com
-@author       coldenate, isabelroses and skelebro1
-@preprocessor less
-@var select lightFlavour "Light Flavour"["latte:Latte*", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha"]
-@var select darkFlavour "Dark Flavour"["latte:Latte", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha*"]
-@var select accentColour "Accent"["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve", "red:Red", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire*", "sky:Sky", "lavender:Lavender", "subtext0:Grey"]
+
+@name Chess.com Catppuccin
+@namespace github.com/catppuccin/chess.com
+@homepageURL https://github.com/catppuccin/chess.com
+@version 0.1.0
+@updateURL https://github.com/catppuccin/chess.com/raw/main/catppuccin.user.css
+@description Soothing pastel theme for Chess.com
+@author coldenate, isabelroses and skelebro1
 @license MIT
+
+@preprocessor less
+
+@var select lightFlavour "Light Theme" ["latte:Latte*", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha"]
+@var select darkFlavour "Dark Theme" ["latte:Latte", "frappe:Frappe", "macchiato:Macchiato", "mocha:Mocha*"]
+@var select accentColour  "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve", "red:Red*", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire", "sky:Sky", "lavender:Lavender", "subtext0:Grey"]
+
 ==/UserStyle== */
 @-moz-document domain("chess.com") {
-  body {
-    #catppuccin(@lightFlavour, @accentColour);
-  }
-  .dark-mode {
-    #catppuccin(@darkFlavour, @accentColour);
-  }
+	body {
+		#catppuccin(@lightFlavour, @accentColour);
+	}
 
-  @catppuccin: {
-    @latte: {
-      @rosewater: #dc8a78;
-      @flamingo: #dd7878;
-      @pink: #ea76cb;
-      @mauve: #8839ef;
-      @red: #d20f39;
-      @maroon: #e64553;
-      @peach: #fe640b;
-      @yellow: #df8e1d;
-      @green: #40a02b;
-      @teal: #179299;
-      @sky: #04a5e5;
-      @sapphire: #209fb5;
-      @blue: #1e66f5;
-      @lavender: #7287fd;
-      @text: #4c4f69;
-      @subtext1: #5c5f77;
-      @subtext0: #6c6f85;
-      @overlay2: #7c7f93;
-      @overlay1: #8c8fa1;
-      @overlay0: #9ca0b0;
-      @surface2: #acb0be;
-      @surface1: #bcc0cc;
-      @surface0: #ccd0da;
-      @base: #eff1f5;
-      @mantle: #e6e9ef;
-      @crust: #dce0e8;
-      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bb.png");
-      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bk.png");
-      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bn.png");
-      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bp.png");
-      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bq.png");
-      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/br.png");
-      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wb.png");
-      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wk.png");
-      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wn.png");
-      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wp.png");
-      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wq.png");
-      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wr.png");
-    };
-    @frappe: {
-      @rosewater: #f2d5cf;
-      @flamingo: #eebebe;
-      @pink: #f4b8e4;
-      @mauve: #ca9ee6;
-      @red: #e78284;
-      @maroon: #ea999c;
-      @peach: #ef9f76;
-      @yellow: #e5c890;
-      @green: #a6d189;
-      @teal: #81c8be;
-      @sky: #99d1db;
-      @sapphire: #85c1dc;
-      @blue: #8caaee;
-      @lavender: #babbf1;
-      @text: #c6d0f5;
-      @subtext1: #b5bfe2;
-      @subtext0: #a5adce;
-      @overlay2: #949cbb;
-      @overlay1: #838ba7;
-      @overlay0: #737994;
-      @surface2: #626880;
-      @surface1: #51576d;
-      @surface0: #414559;
-      @base: #303446;
-      @mantle: #292c3c;
-      @crust: #232634;
-      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bb.png");
-      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bk.png");
-      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bn.png");
-      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bp.png");
-      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bq.png");
-      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/br.png");
-      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wb.png");
-      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wk.png");
-      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wn.png");
-      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wp.png");
-      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wq.png");
-      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wr.png");
-    };
-    @macchiato: {
-      @rosewater: #f4dbd6;
-      @flamingo: #f0c6c6;
-      @pink: #f5bde6;
-      @mauve: #c6a0f6;
-      @red: #ed8796;
-      @maroon: #ee99a0;
-      @peach: #f5a97f;
-      @yellow: #eed49f;
-      @green: #a6da95;
-      @teal: #8bd5ca;
-      @sky: #91d7e3;
-      @sapphire: #7dc4e4;
-      @blue: #8aadf4;
-      @lavender: #b7bdf8;
-      @text: #cad3f5;
-      @subtext1: #b8c0e0;
-      @subtext0: #a5adcb;
-      @overlay2: #939ab7;
-      @overlay1: #8087a2;
-      @overlay0: #6e738d;
-      @surface2: #5b6078;
-      @surface1: #494d64;
-      @surface0: #363a4f;
-      @base: #24273a;
-      @mantle: #1e2030;
-      @crust: #181926;
-      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bb.png");
-      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bk.png");
-      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bn.png");
-      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bp.png");
-      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bq.png");
-      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/br.png");
-      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wb.png");
-      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wk.png");
-      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wn.png");
-      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wp.png");
-      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wq.png");
-      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wr.png");
-    };
-    @mocha: {
-      @rosewater: #f5e0dc;
-      @flamingo: #f2cdcd;
-      @pink: #f5c2e7;
-      @mauve: #cba6f7;
-      @red: #f38ba8;
-      @maroon: #eba0ac;
-      @peach: #fab387;
-      @yellow: #f9e2af;
-      @green: #a6e3a1;
-      @teal: #94e2d5;
-      @sky: #89dceb;
-      @sapphire: #74c7ec;
-      @blue: #89b4fa;
-      @lavender: #b4befe;
-      @text: #cdd6f4;
-      @subtext1: #bac2de;
-      @subtext0: #a6adc8;
-      @overlay2: #9399b2;
-      @overlay1: #7f849c;
-      @overlay0: #6c7086;
-      @surface2: #585b70;
-      @surface1: #45475a;
-      @surface0: #313244;
-      @base: #1e1e2e;
-      @mantle: #181825;
-      @crust: #11111b;
-      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bb.png");
-      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bk.png");
-      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bn.png");
-      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bp.png");
-      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bq.png");
-      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/br.png");
-      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wb.png");
-      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wk.png");
-      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wn.png");
-      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wp.png");
-      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wq.png");
-      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wr.png");
-    };
-  };
+	.dark-mode {
+		#catppuccin(@darkFlavour, @accentColour);
+	}
 
-  #catppuccin(@lookup,
-        @accent) {
-    @rosewater: @catppuccin[@@lookup][@rosewater];
-    @flamingo: @catppuccin[@@lookup][@flamingo];
-    @pink: @catppuccin[@@lookup][@pink];
-    @mauve: @catppuccin[@@lookup][@mauve];
-    @red: @catppuccin[@@lookup][@red];
-    @maroon: @catppuccin[@@lookup][@maroon];
-    @peach: @catppuccin[@@lookup][@peach];
-    @yellow: @catppuccin[@@lookup][@yellow];
-    @green: @catppuccin[@@lookup][@green];
-    @teal: @catppuccin[@@lookup][@teal];
-    @sky: @catppuccin[@@lookup][@sky];
-    @sapphire: @catppuccin[@@lookup][@sapphire];
-    @blue: @catppuccin[@@lookup][@blue];
-    @lavender: @catppuccin[@@lookup][@lavender];
-    @text: @catppuccin[@@lookup][@text];
-    @subtext1: @catppuccin[@@lookup][@subtext1];
-    @subtext0: @catppuccin[@@lookup][@subtext0];
-    @overlay2: @catppuccin[@@lookup][@overlay2];
-    @overlay1: @catppuccin[@@lookup][@overlay1];
-    @overlay0: @catppuccin[@@lookup][@overlay0];
-    @surface2: @catppuccin[@@lookup][@surface2];
-    @surface1: @catppuccin[@@lookup][@surface1];
-    @surface0: @catppuccin[@@lookup][@surface0];
-    @base: @catppuccin[@@lookup][@base];
-    @mantle: @catppuccin[@@lookup][@mantle];
-    @crust: @catppuccin[@@lookup][@crust];
-    @accent-colour: @catppuccin[@@lookup][@@accent];
+	@catppuccin: {
+		@latte: {
+			@rosewater: #dc8a78;
+			@flamingo: #dd7878;
+			@pink: #ea76cb;
+			@mauve: #8839ef;
+			@red: #d20f39;
+			@maroon: #e64553;
+			@peach: #fe640b;
+			@yellow: #df8e1d;
+			@green: #40a02b;
+			@teal: #179299;
+			@sky: #04a5e5;
+			@sapphire: #209fb5;
+			@blue: #1e66f5;
+			@lavender: #7287fd;
+			@text: #4c4f69;
+			@subtext1: #5c5f77;
+			@subtext0: #6c6f85;
+			@overlay2: #7c7f93;
+			@overlay1: #8c8fa1;
+			@overlay0: #9ca0b0;
+			@surface2: #acb0be;
+			@surface1: #bcc0cc;
+			@surface0: #ccd0da;
+			@base: #eff1f5;
+			@mantle: #e6e9ef;
+			@crust: #dce0e8;
+			@bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bb.png");
+			@bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bk.png");
+			@bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bn.png");
+			@bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bp.png");
+			@bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bq.png");
+			@br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/br.png");
+			@wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wb.png");
+			@wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wk.png");
+			@wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wn.png");
+			@wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wp.png");
+			@wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wq.png");
+			@wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wr.png");
+		}
 
-    @bb: @catppuccin[@@lookup][@bb];
-    @bk: @catppuccin[@@lookup][@bk];
-    @bn: @catppuccin[@@lookup][@bn];
-    @bp: @catppuccin[@@lookup][@bp];
-    @bq: @catppuccin[@@lookup][@bq];
-    @br: @catppuccin[@@lookup][@br];
-    @wb: @catppuccin[@@lookup][@wb];
-    @wk: @catppuccin[@@lookup][@wk];
-    @wn: @catppuccin[@@lookup][@wn];
-    @wp: @catppuccin[@@lookup][@wp];
-    @wq: @catppuccin[@@lookup][@wq];
-    @wr: @catppuccin[@@lookup][@wr];
+		;
 
-    & when (@lookup ="latte") {
-      body {
-        background: @base;
-      }
-    }
+		@frappe: {
+			@rosewater: #f2d5cf;
+			@flamingo: #eebebe;
+			@pink: #f4b8e4;
+			@mauve: #ca9ee6;
+			@red: #e78284;
+			@maroon: #ea999c;
+			@peach: #ef9f76;
+			@yellow: #e5c890;
+			@green: #a6d189;
+			@teal: #81c8be;
+			@sky: #99d1db;
+			@sapphire: #85c1dc;
+			@blue: #8caaee;
+			@lavender: #babbf1;
+			@text: #c6d0f5;
+			@subtext1: #b5bfe2;
+			@subtext0: #a5adce;
+			@overlay2: #949cbb;
+			@overlay1: #838ba7;
+			@overlay0: #737994;
+			@surface2: #626880;
+			@surface1: #51576d;
+			@surface0: #414559;
+			@base: #303446;
+			@mantle: #292c3c;
+			@crust: #232634;
+			@bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bb.png");
+			@bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bk.png");
+			@bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bn.png");
+			@bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bp.png");
+			@bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bq.png");
+			@br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/br.png");
+			@wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wb.png");
+			@wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wk.png");
+			@wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wn.png");
+			@wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wp.png");
+			@wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wq.png");
+			@wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wr.png");
+		}
 
-    & {
-      background: @base;
-      --globalBackground: @mantle !important;
-      --globalBackgroundOpaque: @mantle !important;
-      --globalSecondaryBackground: @crust !important;
-      --globalTertiaryBackground: @surface0 !important;
-      --globalAccentBackground: @accent-colour !important;
-      --globalSecondaryAccentBackground: darken(@accent-colour, 20%) !important;
-      --globalSiteBackground: @base !important;
-      --subtleButtonBackground: hsla(0, 0%, 100%, 0.16);
-      --globalBorder: @surface0 !important;
-      --globalGray: hsla(0, 0%, 100%, 0.08);
-      --globalGraySoft: hsla(0, 0%, 100%, 0.08);
-      --globalColorThemeFull: #fff;
-      --globalColorThemeHigh: hsla(0, 0%, 100%, 0.85);
-      --globalColorThemeMid: @overlay2 !important;
-      --globalColorThemeLow: @overlay0 !important;
-      --globalColorThemeLower: @base !important;
-      --globalColorThemeLink: @sapphire !important;
-      --globalColorThemeBlueToWhite: #fff;
-      --globalColorThemeBlueToMid: hsla(0, 0%, 100%, 0.72);
-      --globalColorThemeBlueToMidHover: hsla(0, 0%, 100%, 0.85);
-      --globalColorThemeBlueToHigh: hsla(0, 0%, 100%, 0.85);
-      --globalColorThemeBlueToHighHover: #fff;
-      --globalColorThemeHighToMid: hsla(0, 0%, 100%, 0.72);
-      --globalColorThemeFullToMid: hsla(0, 0%, 100%, 0.72);
-      --globalColorNeutral50: rgba(0, 0, 0, 0.1);
-      --globalColorNeutral100: rgba(0, 0, 0, 0.2);
-      --globalColorNeutral200: rgba(0, 0, 0, 0.4);
-      --globalOverlayBackground: @base !important;
-      --globalColorWin: @green !important;
-      --globalColorDraw: @accent-colour !important;
-      --globalColorLoss: @red !important;
-    }
+		;
 
-    /* index page */
-    .promo-title,
-    .index-title {
-      color: @text !important;
-    }
+		@macchiato: {
+			@rosewater: #f4dbd6;
+			@flamingo: #f0c6c6;
+			@pink: #f5bde6;
+			@mauve: #c6a0f6;
+			@red: #ed8796;
+			@maroon: #ee99a0;
+			@peach: #f5a97f;
+			@yellow: #eed49f;
+			@green: #a6da95;
+			@teal: #8bd5ca;
+			@sky: #91d7e3;
+			@sapphire: #7dc4e4;
+			@blue: #8aadf4;
+			@lavender: #b7bdf8;
+			@text: #cad3f5;
+			@subtext1: #b8c0e0;
+			@subtext0: #a5adcb;
+			@overlay2: #939ab7;
+			@overlay1: #8087a2;
+			@overlay0: #6e738d;
+			@surface2: #5b6078;
+			@surface1: #494d64;
+			@surface0: #363a4f;
+			@base: #24273a;
+			@mantle: #1e2030;
+			@crust: #181926;
+			@bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bb.png");
+			@bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bk.png");
+			@bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bn.png");
+			@bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bp.png");
+			@bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bq.png");
+			@br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/br.png");
+			@wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wb.png");
+			@wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wk.png");
+			@wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wn.png");
+			@wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wp.png");
+			@wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wq.png");
+			@wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wr.png");
+		}
 
-    .index-info-item-counter {
-      color: @text !important;
-    }
+		;
 
-    .index-info-item {
-      color: @subtext0 !important;
-    }
+		@mocha: {
+			@rosewater: #f5e0dc;
+			@flamingo: #f2cdcd;
+			@pink: #f5c2e7;
+			@mauve: #cba6f7;
+			@red: #f38ba8;
+			@maroon: #eba0ac;
+			@peach: #fab387;
+			@yellow: #f9e2af;
+			@green: #a6e3a1;
+			@teal: #94e2d5;
+			@sky: #89dceb;
+			@sapphire: #74c7ec;
+			@blue: #89b4fa;
+			@lavender: #b4befe;
+			@text: #cdd6f4;
+			@subtext1: #bac2de;
+			@subtext0: #a6adc8;
+			@overlay2: #9399b2;
+			@overlay1: #7f849c;
+			@overlay0: #6c7086;
+			@surface2: #585b70;
+			@surface1: #45475a;
+			@surface0: #313244;
+			@base: #1e1e2e;
+			@mantle: #181825;
+			@crust: #11111b;
+			@bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bb.png");
+			@bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bk.png");
+			@bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bn.png");
+			@bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bp.png");
+			@bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bq.png");
+			@br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/br.png");
+			@wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wb.png");
+			@wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wk.png");
+			@wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wn.png");
+			@wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wp.png");
+			@wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wq.png");
+			@wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wr.png");
+		}
 
-    .index-quote-author .index-chess-title {
-      background: @accent-colour !important;
-      color: @crust !important;
-    }
+		;
+	}
 
-    .authentication-intro-levels {
-      --labelBackground: @surface0 !important;
-      --labelBackgroundHover: @surface1 !important;
+	;
 
-      .authentication-intro-level-v5.authentication-intro-selected {
-        border-color: @accent-colour !important;
-      }
-    }
+	#catppuccin(@lookup,
+		@accent) {
+		@rosewater: @catppuccin[@@lookup][@rosewater];
+		@flamingo: @catppuccin[@@lookup][@flamingo];
+		@pink: @catppuccin[@@lookup][@pink];
+		@mauve: @catppuccin[@@lookup][@mauve];
+		@red: @catppuccin[@@lookup][@red];
+		@maroon: @catppuccin[@@lookup][@maroon];
+		@peach: @catppuccin[@@lookup][@peach];
+		@yellow: @catppuccin[@@lookup][@yellow];
+		@green: @catppuccin[@@lookup][@green];
+		@teal: @catppuccin[@@lookup][@teal];
+		@sky: @catppuccin[@@lookup][@sky];
+		@sapphire: @catppuccin[@@lookup][@sapphire];
+		@blue: @catppuccin[@@lookup][@blue];
+		@lavender: @catppuccin[@@lookup][@lavender];
+		@text: @catppuccin[@@lookup][@text];
+		@subtext1: @catppuccin[@@lookup][@subtext1];
+		@subtext0: @catppuccin[@@lookup][@subtext0];
+		@overlay2: @catppuccin[@@lookup][@overlay2];
+		@overlay1: @catppuccin[@@lookup][@overlay1];
+		@overlay0: @catppuccin[@@lookup][@overlay0];
+		@surface2: @catppuccin[@@lookup][@surface2];
+		@surface1: @catppuccin[@@lookup][@surface1];
+		@surface0: @catppuccin[@@lookup][@surface0];
+		@base: @catppuccin[@@lookup][@base];
+		@mantle: @catppuccin[@@lookup][@mantle];
+		@crust: @catppuccin[@@lookup][@crust];
+		@accent-colour: @catppuccin[@@lookup][@@accent];
 
-    /* ui */
-    .ui_v5-button-component {
-      &.ui_v5-button-basic {
-        --basicColor: @text !important;
-        --basicHoverColor: @text !important;
-        --basicBgColor: @surface1 !important;
-        --basicBghover: @surface2 !important;
-        --borderColor: @surface0 !important;
-      }
-      &.ui_v5-button-primary {
-        color: @crust !important;
-        background-color: @accent-colour !important;
-        --borderColor: darken(@accent-colour, 20%) !important;
-        &:hover {
-          --secondaryBorderColor: fadeout(@accent-colour, 20%) !important;
-        }
-      }
-    }
+		@bb: @catppuccin[@@lookup][@bb];
+		@bk: @catppuccin[@@lookup][@bk];
+		@bn: @catppuccin[@@lookup][@bn];
+		@bp: @catppuccin[@@lookup][@bp];
+		@bq: @catppuccin[@@lookup][@bq];
+		@br: @catppuccin[@@lookup][@br];
+		@wb: @catppuccin[@@lookup][@wb];
+		@wk: @catppuccin[@@lookup][@wk];
+		@wn: @catppuccin[@@lookup][@wn];
+		@wp: @catppuccin[@@lookup][@wp];
+		@wq: @catppuccin[@@lookup][@wq];
+		@wr: @catppuccin[@@lookup][@wr];
 
-    .ui_v5-select-component {
-      &:not(.ui_v5-select-light),
-      &.ui_v5-select-dark {
-        background: @base;
-      }
-    }
+		& when (@lookup ="latte") {
+			body {
+				background: @base;
+			}
+		}
 
-    .ui_v5-input-component {
-      background: @base;
-    }
+		& {
+			background: @base;
+			--globalBackground: @mantle  !important;
+			--globalBackgroundOpaque: @mantle  !important;
+			--globalSecondaryBackground: @crust  !important;
+			--globalTertiaryBackground: @surface0  !important;
+			--globalAccentBackground: @accent-colour  !important;
+			--globalSecondaryAccentBackground: darken(@accent-colour, 20%) !important;
+			--globalSiteBackground: @base  !important;
+			--subtleButtonBackground: hsla(0, 0%, 100%, 0.16);
+			--globalBorder: @surface0  !important;
+			--globalGray: hsla(0, 0%, 100%, 0.08);
+			--globalGraySoft: hsla(0, 0%, 100%, 0.08);
+			--globalColorThemeFull: #fff;
+			--globalColorThemeHigh: hsla(0, 0%, 100%, 0.85);
+			--globalColorThemeMid: @overlay2  !important;
+			--globalColorThemeLow: @overlay0  !important;
+			--globalColorThemeLower: @base  !important;
+			--globalColorThemeLink: @sapphire  !important;
+			--globalColorThemeBlueToWhite: #fff;
+			--globalColorThemeBlueToMid: hsla(0, 0%, 100%, 0.72);
+			--globalColorThemeBlueToMidHover: hsla(0, 0%, 100%, 0.85);
+			--globalColorThemeBlueToHigh: hsla(0, 0%, 100%, 0.85);
+			--globalColorThemeBlueToHighHover: #fff;
+			--globalColorThemeHighToMid: hsla(0, 0%, 100%, 0.72);
+			--globalColorThemeFullToMid: hsla(0, 0%, 100%, 0.72);
+			--globalColorNeutral50: rgba(0, 0, 0, 0.1);
+			--globalColorNeutral100: rgba(0, 0, 0, 0.2);
+			--globalColorNeutral200: rgba(0, 0, 0, 0.4);
+			--globalOverlayBackground: @base  !important;
+			--globalColorWin: @green  !important;
+			--globalColorDraw: @accent-colour  !important;
+			--globalColorLoss: @red  !important;
+		}
 
-    .ui_v5-switch-checkbox:not(.ui_v5-switch-readonly):checked
-      + .ui_v5-switch-label {
-      background: @green;
-    }
+		/* index page */
+		.promo-title,
+		.index-title {
+			color: @text  !important;
+		}
 
-    .nav-panel-shade {
-      background: @mantle;
-    }
+		.index-info-item-counter {
+			color: @text  !important;
+		}
 
-    .nav-popover.dark {
-      background: @mantle;
-    }
+		.index-info-item {
+			color: @subtext0  !important;
+		}
 
-    .nav-section-header-component {
-      background: @base;
-    }
+		.index-quote-author .index-chess-title {
+			background: @accent-colour  !important;
+			color: @crust  !important;
+		}
 
-    #sb .nav-action.has-popover + .nav-popover {
-      background: @mantle;
-    }
+		.authentication-intro-levels {
+			--labelBackground: @surface0  !important;
+			--labelBackgroundHover: @surface1  !important;
 
-    .popover-friends-header {
-      background: @mantle;
-    }
+			.authentication-intro-level-v5.authentication-intro-selected {
+				border-color: @accent-colour  !important;
+			}
+		}
 
-    .popover-friends-content {
-      background: @mantle;
-    }
+		/* ui */
+		.ui_v5-button-component {
+			&.ui_v5-button-basic {
+				--basicColor: @text  !important;
+				--basicHoverColor: @text  !important;
+				--basicBgColor: @surface1  !important;
+				--basicBghover: @surface2  !important;
+				--borderColor: @surface0  !important;
+			}
 
-    .popover-messages-header {
-      background: @mantle;
-    }
+			&.ui_v5-button-primary {
+				color: @crust  !important;
+				background-color: @accent-colour  !important;
+				--borderColor: darken(@accent-colour, 20%) !important;
 
-    .popover-messages-content {
-      background: @mantle;
-    }
+				&:hover {
+					--secondaryBorderColor: fadeout(@accent-colour, 20%) !important;
+				}
+			}
+		}
 
-    .popover-settings-header {
-      background: @mantle;
-    }
+		.ui_v5-select-component {
 
-    .popover-settings-content {
-      background: @mantle;
-    }
+			&:not(.ui_v5-select-light),
+			&.ui_v5-select-dark {
+				background: @base;
+			}
+		}
 
-    .selector-button-button {
-      background: @surface0;
-      &:hover {
-        background: @surface1;
-      }
-    }
+		.ui_v5-input-component {
+			background: @base;
+		}
 
-    .time-selector-button-button {
-      background: @surface0;
-      &:hover {
-        background: @surface1;
-      }
-    }
+		.ui_v5-switch-checkbox:not(.ui_v5-switch-readonly):checked+.ui_v5-switch-label {
+			background: @green;
+		}
 
-    .clock-component.clock-black {
-      background: @surface0;
-    }
+		.nav-panel-shade {
+			background: @mantle;
+		}
 
-    .clock-component.clock-white {
-      background: @text;
-    }
+		.nav-popover.dark {
+			background: @mantle;
+		}
 
-    .highlight {
-      background: @peach !important;
-    }
+		.nav-section-header-component {
+			background: @base;
+		}
 
-    .hint {
-      background-color: @overlay1;
-      filter: drop-shadow(0px 0px 1px @crust);
-    }
+		#sb .nav-action.has-popover+.nav-popover {
+			background: @mantle;
+		}
 
-    .capture-hint {
-      background-color: @overlay1;
-      filter: drop-shadow(0px 0px 1px @crust);
-      z-index: -1;
-    }
+		.popover-friends-header {
+			background: @mantle;
+		}
 
-    .modal-game-over-header-grey {
-      background-color: @base;
-    }
+		.popover-friends-content {
+			background: @mantle;
+		}
 
-    .modal-content-component.modal-content-light {
-      background-color: @base;
-    }
+		.popover-messages-header {
+			background: @mantle;
+		}
 
-    .modal-game-over-user-winner-active {
-      border-color: @lavender;
-    }
+		.popover-messages-content {
+			background: @mantle;
+		}
 
-    .modal-game-over-user-crown {
-      background: @lavender;
-    }
+		.popover-settings-header {
+			background: @mantle;
+		}
 
-    .placeholder-ad-upgrade {
-      background-color: @accent-colour;
-    }
+		.popover-settings-content {
+			background: @mantle;
+		}
 
-    .placeholder-ad-link {
-      color: @crust;
-    }
+		.selector-button-button {
+			background: @surface0;
 
-    div.mode-selection-button-selected > .mode-selection-button-description {
-      color: @surface1;
-    }
-    div.mode-selection-button-selected > .mode-selection-button-mode {
-      color: @mantle;
-    }
-    /* crowns */
-    img.crowns-full-crown {
-        /* this selects the crown, but tbh its not easy to rotate-hue an svg to an exact color. we might make more svgs for the crowns? */
-    }
+			&:hover {
+				background: @surface1;
+			}
+		}
 
-    /* Board */
-    .board {
-      background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/base/board.png") !important;
-    }
+		.time-selector-button-button {
+			background: @surface0;
 
-    .game-preview-legacy-component {
-      background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/base/board.png") !important;
-    }
+			&:hover {
+				background: @surface1;
+			}
+		}
 
-    /* Black Pieces */
-    .piece.bp {
-      background-image: @bp !important;
-    }
+		.clock-component.clock-black {
+			background: @surface0;
+		}
 
-    .piece.bn {
-      background-image: @bn !important;
-    }
+		.clock-component.clock-white {
+			background: @text;
+		}
 
-    .piece.bb {
-      background-image: @bb !important;
-    }
+		.highlight {
+			background: @peach  !important;
+		}
 
-    .piece.br {
-      background-image: @br !important;
-    }
+		.hint {
+			background-color: @overlay1;
+			filter: drop-shadow(0px 0px 1px @crust);
+		}
 
-    .piece.bk {
-      background-image: @bk !important;
-    }
+		.capture-hint {
+			background-color: @overlay1;
+			filter: drop-shadow(0px 0px 1px @crust);
+			z-index: -1;
+		}
 
-    .piece.bq {
-      background-image: @bq !important;
-    }
-    /* -- Previews */
-    .game-preview-legacy-piece[alt="bb"] {
-      content: @bb !important;
-    }
-    .game-preview-legacy-piece[alt="bk"] {
-      content: @bk !important;
-    }
-    .game-preview-legacy-piece[alt="bn"] {
-      content: @bn !important;
-    }
-    .game-preview-legacy-piece[alt="bp"] {
-      content: @bp !important;
-    }
-    .game-preview-legacy-piece[alt="bq"] {
-      content: @bq !important;
-    }
-    .game-preview-legacy-piece[alt="br"] {
-      content: @br !important;
-    }
-    .game-preview-legacy-piece[alt="wb"] {
-      content: @wb !important;
-    }
-    .game-preview-legacy-piece[alt="wk"] {
-      content: @wk !important;
-    }
-    .game-preview-legacy-piece[alt="wn"] {
-      content: @wn !important;
-    }
-    .game-preview-legacy-piece[alt="wp"] {
-      content: @wp !important;
-    }
-    .game-preview-legacy-piece[alt="wq"] {
-      content: @wq !important;
-    }
-    .game-preview-legacy-piece[alt="wr"] {
-      content: @wr !important;
-    }
+		.modal-game-over-header-grey {
+			background-color: @base;
+		}
 
-    /* White Pieces */
-    .piece.wp {
-      background-image: @wp !important;
-    }
+		.modal-content-component.modal-content-light {
+			background-color: @base;
+		}
 
-    .piece.wn {
-      background-image: @wn !important;
-    }
+		.modal-game-over-user-winner-active {
+			border-color: @lavender;
+		}
 
-    .piece.wb {
-      background-image: @wb !important;
-    }
+		.modal-game-over-user-crown {
+			background: @lavender;
+		}
 
-    .piece.wr {
-      background-image: @wr !important;
-    }
+		.placeholder-ad-upgrade {
+			background-color: @accent-colour;
+		}
 
-    .piece.wk {
-      background-image: @wk !important;
-    }
+		.placeholder-ad-link {
+			color: @crust;
+		}
 
-    .piece.wq {
-      background-image: @wq !important;
-    }
-  }
+		div.mode-selection-button-selected>.mode-selection-button-description {
+			color: @surface1;
+		}
+
+		div.mode-selection-button-selected>.mode-selection-button-mode {
+			color: @mantle;
+		}
+
+		/* crowns */
+		img.crowns-full-crown {
+			/* this selects the crown, but tbh its not easy to rotate-hue an svg to an exact color. we might make more svgs for the crowns? */
+		}
+
+		/* Board */
+		.board {
+			background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/base/board.png") !important;
+		}
+
+		.game-preview-legacy-component {
+			background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/base/board.png") !important;
+		}
+
+		/* Black Pieces */
+		.piece.bp {
+			background-image: @bp  !important;
+		}
+
+		.piece.bn {
+			background-image: @bn  !important;
+		}
+
+		.piece.bb {
+			background-image: @bb  !important;
+		}
+
+		.piece.br {
+			background-image: @br  !important;
+		}
+
+		.piece.bk {
+			background-image: @bk  !important;
+		}
+
+		.piece.bq {
+			background-image: @bq  !important;
+		}
+
+		/* -- Previews */
+		.game-preview-legacy-piece[alt="bb"] {
+			content: @bb  !important;
+		}
+
+		.game-preview-legacy-piece[alt="bk"] {
+			content: @bk  !important;
+		}
+
+		.game-preview-legacy-piece[alt="bn"] {
+			content: @bn  !important;
+		}
+
+		.game-preview-legacy-piece[alt="bp"] {
+			content: @bp  !important;
+		}
+
+		.game-preview-legacy-piece[alt="bq"] {
+			content: @bq  !important;
+		}
+
+		.game-preview-legacy-piece[alt="br"] {
+			content: @br  !important;
+		}
+
+		.game-preview-legacy-piece[alt="wb"] {
+			content: @wb  !important;
+		}
+
+		.game-preview-legacy-piece[alt="wk"] {
+			content: @wk  !important;
+		}
+
+		.game-preview-legacy-piece[alt="wn"] {
+			content: @wn  !important;
+		}
+
+		.game-preview-legacy-piece[alt="wp"] {
+			content: @wp  !important;
+		}
+
+		.game-preview-legacy-piece[alt="wq"] {
+			content: @wq  !important;
+		}
+
+		.game-preview-legacy-piece[alt="wr"] {
+			content: @wr  !important;
+		}
+
+		/* White Pieces */
+		.piece.wp {
+			background-image: @wp  !important;
+		}
+
+		.piece.wn {
+			background-image: @wn  !important;
+		}
+
+		.piece.wb {
+			background-image: @wb  !important;
+		}
+
+		.piece.wr {
+			background-image: @wr  !important;
+		}
+
+		.piece.wk {
+			background-image: @wk  !important;
+		}
+
+		.piece.wq {
+			background-image: @wq  !important;
+		}
+	}
 }
