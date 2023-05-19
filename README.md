@@ -37,23 +37,16 @@
 ## Usage
 
 #### Stylus
+
 1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
-2. [Click here to install.](https://raw.githubusercontent.com/coldenate/chess.com/main/catppuccin.user.css)
-
-<!-- this section is optional 
-## 🙋 FAQ
-
--	Q: **_"Where can I find the doc?"_**\
-	A: Run `:help theme`
-
-    -->
+2. [Click here to install.](https://raw.githubusercontent.com/catppuccin/chess.com/main/catppuccin.user.css)
 
 ## 💝 Thanks to
 
 - [Skele](https://github.com/skelebro1)
-- [Nathan Solis](https://github.com/coldenate)
+- [coldenate](https://github.com/coldenate)
 - [Isabel](https://github.com/isabelroses)
-&nbsp;
+  &nbsp;
 
 <p align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />
