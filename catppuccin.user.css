@@ -53,18 +53,18 @@
       @base: #eff1f5;
       @mantle: #e6e9ef;
       @crust: #dce0e8;
-      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bb.png");
-      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bk.png");
-      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bn.png");
-      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bp.png");
-      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/bq.png");
-      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/b/br.png");
-      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wb.png");
-      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wk.png");
-      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wn.png");
-      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wp.png");
-      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wq.png");
-      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/latte/w/wr.png");
+      @bb: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/b/bb.png");
+      @bk: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/b/bk.png");
+      @bn: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/b/bn.png");
+      @bp: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/b/bp.png");
+      @bq: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/b/bq.png");
+      @br: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/b/br.png");
+      @wb: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/w/wb.png");
+      @wk: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/w/wk.png");
+      @wn: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/w/wn.png");
+      @wp: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/w/wp.png");
+      @wq: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/w/wq.png");
+      @wr: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/latte/w/wr.png");
     };
 
     @frappe: {
@@ -94,18 +94,18 @@
       @base: #303446;
       @mantle: #292c3c;
       @crust: #232634;
-      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bb.png");
-      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bk.png");
-      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bn.png");
-      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bp.png");
-      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/bq.png");
-      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/b/br.png");
-      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wb.png");
-      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wk.png");
-      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wn.png");
-      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wp.png");
-      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wq.png");
-      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/frappe/w/wr.png");
+      @bb: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/b/bb.png");
+      @bk: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/b/bk.png");
+      @bn: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/b/bn.png");
+      @bp: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/b/bp.png");
+      @bq: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/b/bq.png");
+      @br: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/b/br.png");
+      @wb: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/w/wb.png");
+      @wk: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/w/wk.png");
+      @wn: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/w/wn.png");
+      @wp: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/w/wp.png");
+      @wq: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/w/wq.png");
+      @wr: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/frappe/w/wr.png");
     };
 
     @macchiato: {
@@ -135,18 +135,18 @@
       @base: #24273a;
       @mantle: #1e2030;
       @crust: #181926;
-      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bb.png");
-      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bk.png");
-      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bn.png");
-      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bp.png");
-      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/bq.png");
-      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/b/br.png");
-      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wb.png");
-      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wk.png");
-      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wn.png");
-      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wp.png");
-      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wq.png");
-      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/macchiato/w/wr.png");
+      @bb: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/b/bb.png");
+      @bk: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/b/bk.png");
+      @bn: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/b/bn.png");
+      @bp: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/b/bp.png");
+      @bq: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/b/bq.png");
+      @br: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/b/br.png");
+      @wb: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/w/wb.png");
+      @wk: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/w/wk.png");
+      @wn: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/w/wn.png");
+      @wp: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/w/wp.png");
+      @wq: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/w/wq.png");
+      @wr: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/macchiato/w/wr.png");
     };
 
     @mocha: {
@@ -176,18 +176,18 @@
       @base: #1e1e2e;
       @mantle: #181825;
       @crust: #11111b;
-      @bb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bb.png");
-      @bk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bk.png");
-      @bn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bn.png");
-      @bp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bp.png");
-      @bq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/bq.png");
-      @br: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/b/br.png");
-      @wb: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wb.png");
-      @wk: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wk.png");
-      @wn: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wn.png");
-      @wp: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wp.png");
-      @wq: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wq.png");
-      @wr: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/w/wr.png");
+      @bb: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/b/bb.png");
+      @bk: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/b/bk.png");
+      @bn: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/b/bn.png");
+      @bp: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/b/bp.png");
+      @bq: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/b/bq.png");
+      @br: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/b/br.png");
+      @wb: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/w/wb.png");
+      @wk: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/w/wk.png");
+      @wn: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/w/wn.png");
+      @wp: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/w/wp.png");
+      @wq: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/w/wq.png");
+      @wr: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/w/wr.png");
     };
   };
 
@@ -458,11 +458,11 @@
 
     /* Board */
     .board {
-      background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/@{accent}.png") !important;
+      background-image: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/@{accent}.png") !important;
     }
 
     .game-preview-legacy-component {
-      background-image: url("https://raw.githubusercontent.com/coldenate/chess.com/main/assets/mocha/@{accent}.png") !important;
+      background-image: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/@{accent}.png") !important;
     }
 
     /* Black Pieces */
