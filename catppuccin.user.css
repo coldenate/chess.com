@@ -458,11 +458,11 @@
 
     /* Board */
     .board {
-      background-image: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/@{accent}.png") !important;
+      background-image: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/@{lookup}/@{accent}.png") !important;
     }
 
     .game-preview-legacy-component {
-      background-image: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/mocha/@{accent}.png") !important;
+      background-image: url("https://raw.githubusercontent.com/catppuccin/chess.com/main/assets/@{lookup}/@{accent}.png") !important;
     }
 
     /* Black Pieces */
