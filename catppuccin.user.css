@@ -304,6 +304,34 @@
     }
 
     /* ui */
+    .user-username-component {
+      color: @text;
+    }
+
+    .user-tagline-rating.user-tagline-white {
+      color: @overlay1;
+    }
+
+    .nav-link-text {
+      color: @text !important;
+    }
+    .nav-menu-area:last-of-type .icon-font-chess {
+      color: @mantle !important;
+    }
+    #sb .nav-popover.dark .btn-link {
+      color: @text;
+    }
+    #sb .nav-menu-area:last-of-type .icon-font-chess {
+      color: @text !important;
+    }
+    .nav-link-main-design:hover,
+    .nav-link-main-link:hover {
+      color: darken(@text, 20%) !important;
+    }
+    .nav-link-main-design,
+    .nav-link-main-link {
+      color: @text !important;
+    }
     .ui_v5-button-component {
       &.ui_v5-button-basic {
         --basicColor: @text !important;
